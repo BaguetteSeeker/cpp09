@@ -6,16 +6,16 @@
 #    By: epinaud <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/21 18:37:43 by epinaud           #+#    #+#              #
-#    Updated: 2026/07/17 11:44:02 by epinaud          ###   ########.fr        #
+#    Updated: 2026/07/18 16:25:43 by epinaud          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-EXE = BitcoinExchange
+EXE = btc
 
 CC = c++
 
-CFLAGS = -std=c++98 -Wall -Wextra -Werror
+CFLAGS = -std=c++98 -Wall -Wextra -Werror -g3
 
 INCLUDES = -I. -Iincludes/
 
@@ -31,7 +31,7 @@ all: $(OBJ_DIR) $(EXE)
 $(EXE) :
 	$(CC) $(CFLAGS) $^ -o $@ $(LDLIBS)
 
-BitcoinExchange: $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
+btc: $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
 .obj:
 	@mkdir -p .obj

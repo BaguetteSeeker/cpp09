@@ -58,6 +58,7 @@ dkms.conf
 /*.c
 /*.txt
 
-BitcoinExchange
+btc
+data.csv
 ReversePolishNotation
 PmergeMe
