@@ -6,12 +6,12 @@
 #    By: epinaud <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/21 18:37:43 by epinaud           #+#    #+#              #
-#    Updated: 2026/07/17 11:43:56 by epinaud          ###   ########.fr        #
+#    Updated: 2026/07/21 14:51:24 by epinaud          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-EXE = ReversePolishNotation
+EXE = RPN
 
 CC = c++
 
@@ -31,7 +31,7 @@ all: $(OBJ_DIR) $(EXE)
 $(EXE) :
 	$(CC) $(CFLAGS) $^ -o $@ $(LDLIBS)
 
-ReversePolishNotation: $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
+RPN: $(addprefix $(OBJ_DIR)/, $(SRCS:.cpp=.o))
 
 .obj:
 	@mkdir -p .obj
