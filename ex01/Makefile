@@ -6,7 +6,7 @@
 #    By: epinaud <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/21 18:37:43 by epinaud           #+#    #+#              #
-#    Updated: 2026/07/21 14:51:24 by epinaud          ###   ########.fr        #
+#    Updated: 2026/07/22 13:08:39 by epinaud          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ EXE = RPN
 
 CC = c++
 
-CFLAGS = -std=c++98 -Wall -Wextra -Werror
+CFLAGS = -std=c++98 -Wall -Wextra -Werror -g3
 
 INCLUDES = -I. -Iincludes/
 
